@@ -54,7 +54,7 @@ function Header({searchBook}) {
             <div className='header__category header__category_where'>
                 <p className='header__cotegories'>Sorting by</p>
 
-                <select name='select-where' className='header__option' onChange={changeSelectTime}>
+                <select name='select-where' className='header__option' value={value} onChange={changeSelectTime}>
                     <option defaultValue>relevance</option>
                     <option value='newest' >newest</option>
                 </select>

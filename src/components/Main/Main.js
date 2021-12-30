@@ -1,13 +1,12 @@
-import Header from "../Header/Header";
 import Cards from "../Cards/Cards";
 import Preloader from "../Preloader/Preloader";
 import ButtonMore from "../ButtonMore/ButtomMore";
-function Main ({searchBook,bookList,isLoading,text,amount,setCurrentBook}) {
+
+function Main ({bookList,isLoading,text,amount,visible}) {
     return(
    <>
-      <Header searchBook={searchBook}/>
-      {isLoading ? <Preloader/> :  <Cards bookList={bookList} text={text} amount={amount} setCurrentBook={setCurrentBook}/>}
-      <ButtonMore/>
+      {isLoading ? <Preloader/> : <Cards bookList={bookList} text={text} amount={amount}/>}
+      <ButtonMore bookList={bookList} visible={visible}/>
    </> 
     )
 }

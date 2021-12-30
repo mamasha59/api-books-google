@@ -5,12 +5,15 @@
     margin-bottom: 20px;
     border-radius: 5px;
 }
+.cards__img{
+    max-width: 160px;
+    margin: 0 auto;
+}
 .card__oblozka{
-    display: flex;
     margin: 0 auto;
     display: block;
     box-shadow: 3px 1px 9px 2px;
-    width: 160px;
+    width: 100%;
     height: 220px;
 }
 .card__title{
@@ -45,4 +48,8 @@
 }
 .cards-link{
     text-decoration: none;
+    transition: .1s linear;
+}
+.cards-link:hover{
+    transform: translateY(-5px);
 }

@@ -9,7 +9,11 @@
     border: 1px solid black;
     cursor: pointer;
     border-radius: 2px;
+    visibility: visible;
 }
 .button-more:hover{
   opacity: .6;
+}
+.button-more_hidden{
+  visibility: hidden;
 }

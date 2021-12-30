@@ -1,6 +1,6 @@
 .info__oblozka {
-  width: 300px;
-  height: 360px;
+  width: 60%;
+  max-height: 360px;
   box-shadow: 3px 1px 9px 2px;
 }
 .info__block-img {
@@ -89,5 +89,13 @@
   }
   .info__block {
     width: 100%;
+  }
+  .info__oblozka{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .info__oblozka{
+    width: 60%;
   }
 }

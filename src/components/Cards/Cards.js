@@ -1,7 +1,8 @@
 import CardList from '../CardList/CardList';
 import './Cards.css';
 
-function Cards ({bookList,text,amount,setCurrentBook}) {
+function Cards ({bookList,text,amount}) {
+    console.log(bookList)
 
     return(
      <main className='books'>
@@ -12,8 +13,7 @@ function Cards ({bookList,text,amount,setCurrentBook}) {
         {bookList ? 
          <div className='books__list'>
                 {bookList.map(book => (
-                <CardList
-                    setCurrentBook={setCurrentBook}
+                 <CardList
                     book={book}
                     key={book.id }
                     img={book.volumeInfo.imageLinks.thumbnail}
